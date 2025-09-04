@@ -3,7 +3,6 @@ export type UploadResponse = {
   summary?: string;
   preview?: string;
   message?: string;
-  [k: string]: any;
 };
 
 export type ResumeSummary = {

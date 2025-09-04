@@ -2,7 +2,7 @@ import { UploadResponse } from "@/types/resume-response-type";
 
 export function uploadResume(
   file: File,
-  onProgress?: (percent: number) => void
+  onProgress?: (percent: number) => void,
 ): Promise<UploadResponse> {
   return new Promise((resolve, reject) => {
     const form = new FormData();
