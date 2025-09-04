@@ -48,9 +48,9 @@ export function ResumeUploadCard({
           <Dropzone onFile={setFile} />
         ) : (
           <div className="space-y-3">
-            <div className="flex items-center justify-between">
+            <div className="md:flex items-center justify-between ">
               <FileChip name={file.name} onRemove={() => setFile(null)} />
-              <div className="flex items-center gap-2">
+              <div className="flex items-center gap-2 md:mt-0 mt-3">
                 <Button
                   disabled={isUploading}
                   variant="destructive"
