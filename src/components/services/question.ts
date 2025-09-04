@@ -2,7 +2,7 @@ import { QueryResponse } from "@/types/query-response-type";
 
 export async function Question(
   question: string,
-  fileId?: string
+  fileId?: string,
 ): Promise<QueryResponse> {
   const res = await fetch(`${process.env.NEXT_PUBLIC_API_BASE}/resume/query`, {
     method: "POST",

@@ -1,7 +1,6 @@
-"use client";
-import * as React from "react";
 import { Button } from "@/components/ui/button";
 import { UploadCloud } from "lucide-react";
+import React from "react";
 
 export function Dropzone({
   onFile,
@@ -20,7 +19,7 @@ export function Dropzone({
       const f = e.dataTransfer.files?.[0];
       if (f) onFile(f);
     },
-    [onFile]
+    [onFile],
   );
 
   return (

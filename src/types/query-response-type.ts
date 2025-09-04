@@ -2,5 +2,7 @@ export type QueryResponse = {
   answer?: string;
   result?: string;
   message?: string;
-  [k: string]: any;
+  status?: string;
+  data?: unknown;
+  error?: string;
 };
